@@ -1,0 +1,16 @@
+:root{
+
+    --color-blue : #1C1362;
+}
+
+
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+   
+  }
+
+

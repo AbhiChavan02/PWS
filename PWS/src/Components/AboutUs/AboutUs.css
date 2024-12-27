@@ -1,0 +1,223 @@
+/* AboutUs.css */
+
+.aboutus {
+    padding: 20px;
+    background-image: url('../../assets/Images/aboutfinal.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.us {
+    color: #f5853b;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Margin to the right */
+}
+
+.icon {
+    font-size: 50%; /* 50% height of the container */
+    color: white; /* Icon color */
+}
+
+.right-section {
+    flex: 2;
+    color: white; /* Text color */
+    padding: 100px;
+}
+
+.hit {
+    font-size: 2.5rem; /* Heading size */
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hello {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 36px;
+    margin-left: -80px;
+}
+
+.para {
+    padding-left: 8rem;
+    font-size: 1.2rem; /* Paragraph size */
+    margin-bottom: 20px;
+}
+
+.read {
+    margin-left: 130px;
+    padding: 5px 30px;
+    font-size: 1rem;
+    color: black;
+    background-color: white; /* Button color */
+    margin-top: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
+}
+
+.read:hover {
+    color: white;
+    background-color: #f5853b; /* Darker shade on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .IconImage {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .about {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto; /* Allow height to adjust */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .left-section {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .icon {
+        font-size: 100px; /* Increase icon size for better visibility */
+    }
+
+    .right-section {
+        padding: 20px; /* Reduce padding */
+        text-align: center; /* Center text */
+    }
+
+    .hit {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .hello {
+        font-size: 26px; /* Reduce subheading size */
+        margin-left: .1rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .para {
+        padding: 12px;
+        margin-left: 1.5rem;
+        text-align: left;
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    .read {
+        margin-left: .9rem;
+        margin-top: 20px;
+        padding: 7px 16px; /* Adjust button padding */
+        font-size: 0.9rem; /* Reduce button font size */
+    }
+}
+
+/* Medium Devices (992px) */
+@media screen and (max-width: 992px) {
+    .about {
+        flex-direction: column; /* Stack sections vertically for medium devices */
+        padding: 10px; /* Reduce padding for medium devices */
+    }
+
+    .left-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        font-size: 90px; /* Reduce icon size for medium devices */
+    }
+
+    .right-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hit {
+        font-size: 2.2rem; /* Slightly reduce the font size */
+    }
+
+    .hello {
+        font-size: 28px; /* Adjust subheading size for medium devices */
+    }
+
+    .para {
+        padding: 12px;
+        margin-left: 1rem;
+        text-align: left;
+        font-size: 1.1rem; /* Adjust paragraph size */
+    }
+
+    .read {
+        margin-left: 1rem;
+        padding: 8px 20px;
+        font-size: 1rem; /* Adjust button size for medium devices */
+    }
+}
+
+/* Mobile Styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .about {
+        flex-direction: column; /* Stack sections vertically for small mobile devices */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .left-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        font-size: 70px; /* Reduce icon size further for smaller screens */
+    }
+
+    .right-section {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hit {
+        font-size: 1.8rem; /* Reduce heading size for mobile */
+    }
+
+    .hello {
+        font-size: 22px; /* Reduce subheading size */
+        margin-left: .1rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .para {
+        padding: 16px;
+        margin-left: 2rem;
+        text-align: left;
+        font-size: 0.9rem; /* Reduce paragraph size */
+    }
+
+    .read {
+        margin-left: .5rem;
+        /* padding: 5px 15px; Further adjust button padding */
+        /* font-size: 0.8rem; Reduce button font size for mobile */
+        width: 60%;
+    }
+    
+}

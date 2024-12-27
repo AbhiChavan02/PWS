@@ -1,0 +1,212 @@
+/* General Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.container {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    margin-top: 4rem; /* Space from previous section */
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.why {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #f5853b;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3.8rem;
+    width: 250px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-out, background-color 0.3s ease-out, color 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures button is pushed to the bottom */
+    opacity: 0; /* Initially hidden for animation */
+    animation: zoomIn 0.5s ease-out forwards; /* Zoom-in animation */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+}
+
+.card:hover .icon img {
+    opacity: 1; /* Ensure the image inside the circle remains visible */
+}
+
+.card:hover p {
+    color: black;
+}
+
+.icon {
+    font-size: 3rem;
+    color: #f5853b;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Circle size */
+    height: 80px;
+    background-color: #e0e0e0; /* Light gray color */
+    border-radius: 50%; /* Makes it a circle */
+    margin: 0 auto 1rem; /* Centers the icon and adds space below */
+}
+
+.icon img {
+    width: 50px; /* Adjust image size */
+    height: 50px;
+    object-fit: contain; /* Ensures the image fits well */
+    opacity: 1; /* Ensure the image is fully visible */
+    transition: opacity 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.butt {
+    background-color: var(--color-blue);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: auto;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.butt:hover {
+    background-color: #f5853b;
+}
+
+.card p {
+    font-size: 1rem;
+    color: black;
+}
+
+.whatsapp {
+    margin-top: 3rem;
+}
+
+.whatsapp img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+
+/* For 992px (Medium Devices, Tablets) */
+@media screen and (max-width: 992px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 45%; /* Two cards per row */
+        margin-bottom: 2rem;
+    }
+
+    .butt {
+        width: 160px; /* Slightly larger button width */
+    }
+}
+
+/* For 768px (Tablets) */
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 70%; /* Cards take up most of the row */
+        margin-bottom: 2rem;
+    }
+
+    .butt {
+        width: 160px; /* Decrease button width further for tablets */
+    }
+}
+
+/* For 480px (Mobile Devices) */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 60%; /* One card per row */
+        height: 305px;
+        margin-bottom: .3rem;
+    }
+
+    .why{
+      font-size: 30px;
+    }
+    .butt {
+        width: 200px; /* Decrease button width further for mobile */
+      /* height: 60px; */
+    }
+
+    .whatsapp img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon {
+        font-size: 3rem;
+        color: #f5853b;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px; /* Circle size */
+        height: 110px;
+        background-color: #e0e0e0; /* Light gray color */
+        border-radius: 50%; /* Makes it a circle */
+        margin: 0 auto 1rem; /* Centers the icon and adds space below */
+    }
+}
+

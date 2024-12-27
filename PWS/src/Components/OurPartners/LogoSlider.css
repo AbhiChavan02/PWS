@@ -1,0 +1,101 @@
+/* General Styles for Logo Slider */
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.logo-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.logo-item {
+  display: inline-block;
+  margin: 0 10px; /* Adjust spacing between logos */
+}
+
+.logo-item img {
+  width: 100%; /* Make logos responsive */
+  max-width: 300px; /* Set max width */
+  height: 200px; /* Maintain aspect ratio */
+}
+
+/* Text */
+.Partner {
+  color: #F69E22;
+}
+
+.our {
+  text-align: center;
+
+  margin: 50px 0px;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Keyframe Animation for Sliding Effect */
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%); /* Move left by half the total width */
+  }
+}
+
+/* Logo Slider Inner (for moving logos) */
+.logo-slider-inner {
+  display: inline-block;
+  animation: slide 7s linear infinite; /* Faster speed */
+}
+
+/* Mobile-Specific (For Small Screens like 768px) */
+@media (max-width: 992px) {
+  .logo-item img {
+      max-width: 250px; /* Adjust max width for mid-size screens */
+      height: 180px; /* Adjust height to fit better */
+  }
+
+  .logo-slider-inner {
+      animation: slide 6s linear infinite; /* Slightly faster sliding for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-item img {
+      max-width: 200px; /* Adjust max width for mobile screens */
+      height: 150px; /* Reduce height for mobile */
+  }
+
+  .logo-slider-inner {
+      animation: slide 4s linear infinite; /* Faster sliding speed for smaller screens */
+  }
+
+  .our {
+      font-size: 2rem; /* Reduce font size for smaller devices */
+  }
+}
+
+/* For very small screens like 480px and below */
+@media (max-width: 480px) {
+  .logo-item img {
+      max-width: 180px; /* Further reduce max width */
+      height: 120px; /* Adjust height for small screens */
+  }
+
+  .logo-slider-inner {
+      animation: slide 3s linear infinite; /* Even faster sliding for small screens */
+  }
+
+  .our {
+      font-size: 2rem; /* Further reduce font size */
+  }
+}
