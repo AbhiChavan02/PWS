@@ -40,6 +40,7 @@ body, html {
 .service-card {
   background: #fff;
   border-radius: 8px;
+  cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 3.8rem;
   width: 250px; /* Fixed width */
@@ -49,8 +50,8 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensures button is pushed to the bottom */
-  opacity: 0; /* Initially hidden for animation */
-  animation: zoomIn 0.5s ease-out forwards; /* Zoom-in animation */
+  /* opacity: 0; Initially hidden for animation */
+  /* animation: zoomIn 0.5s ease-out forwards; Zoom-in animation */
 }
 
 /* Hover state for individual cards */

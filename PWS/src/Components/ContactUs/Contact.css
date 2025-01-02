@@ -41,6 +41,7 @@ body, html {
 .form-section {
   flex: 1;
   padding: 20px;
+  align-items: center;
   width: 100%;
   background-color: white; /* White background for form section */
   border-radius: 10px; /* Rounded corners */
@@ -49,6 +50,7 @@ body, html {
 
 h2 {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .form-group {
@@ -58,18 +60,21 @@ h2 {
 label {
   display: block;
   margin-bottom: 5px;
+  margin-left: 20px;
 }
 
 input,
 textarea {
   width: 90%;
   padding: 10px;
+  margin-left: 20px;
   border: 1px solid #ccc; /* Light border */
   border-radius: 5px; /* Rounded corners */
 }
 
 .bot {
   padding: 10px 15px;
+  margin-left: 20px;
   background-color: var(--color-blue); /* Button background color */
   color: white; /* Button text color */
   border: none;

@@ -273,7 +273,7 @@
 }
 
 /* For 481px to 767px (Mid-Sized Devices) */
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
     
 }
 
